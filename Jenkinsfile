@@ -14,8 +14,16 @@ pipeline{
   }
   post{
     always{
-      junit 'test-results.xml',
-      html 'coverage/index.html'
+      junit 'test-results.xml'
     }
   }
+  publishHTML(target: [
+      allowMissing: false,
+      alwaysLinkToLastBuild: false,
+      keepAll: false,
+      reportDir: 'coverage',
+      reportFiles: 'index.html',
+      reportName: 'HTML Report',
+      reportTitles: ''
+    ])
 }
