@@ -5,7 +5,7 @@ module.exports = {
   },
 
   mul : (a,b)=>{
-    return a * b
+    return a * b;
   },
 
   sub : (a,b)=>{
@@ -14,9 +14,9 @@ module.exports = {
 
   div : (a,b)=>{
     if(b===0){
-      throw  new Error("Division par 0 interdite")
+      throw  new Error('Division par 0 interdite');
     }
-    return a / b
+    return a / b;
   },
 
   prct : (a,b) =>{
@@ -26,4 +26,4 @@ module.exports = {
   pow : (a)=>{
     return CalculService.mul(a,a);
   }
-}
+};
