@@ -18,12 +18,12 @@ pipeline{
     }
   }
   publishHTML(target: [
-      allowMissing: false,
-      alwaysLinkToLastBuild: false,
-      keepAll: false,
-      reportDir: 'coverage',
-      reportFiles: 'index.html',
-      reportName: 'HTML Report',
-      reportTitles: ''
-    ])
+    allowMissing: false,
+    alwaysLinkToLastBuild: false,
+    keepAll: true,
+    reportDir: 'coverage',
+    reportFiles: 'index.html',
+    reportName: 'HTML Report',
+    reportTitles: ''
+  ])
 }
